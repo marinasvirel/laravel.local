@@ -29,3 +29,7 @@ Route::get('/dir/test', function () {
 Route::get('/user/{name}', function ($name) {
     return "string $name";
 });
+
+Route::get('/user/{surname}/{name}', function ($surname, $name) {
+    return "Имя: $name Фамилия: $surname";
+});
