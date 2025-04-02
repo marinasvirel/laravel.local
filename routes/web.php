@@ -34,6 +34,6 @@ Route::get('/user/{surname}/{name}', function ($surname, $name) {
     return "Имя: $name Фамилия: $surname";
 });
 
-Route::get('/city/{city?}', function ($city = 1) {
+Route::get('/city/{city?}', function ($city = 'minsk') {
     return "Город: $city";
 });
