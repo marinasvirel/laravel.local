@@ -33,3 +33,7 @@ Route::get('/user/{name}', function ($name) {
 Route::get('/user/{surname}/{name}', function ($surname, $name) {
     return "Имя: $name Фамилия: $surname";
 });
+
+Route::get('/city/{city?}', function ($city = 1) {
+    return "Город: $city";
+});
