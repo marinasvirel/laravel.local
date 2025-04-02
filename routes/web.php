@@ -17,11 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::prefix('admin')->group(function () {
-    Route::get('/users', function () {
-        return 'all';
-    });
-    Route::get('/user/{id}', function ($id) {
-        return $id;
-    });
-});
+Route::get('/user/profile', function () {
+    return 'profile';
+})->name('profile');
