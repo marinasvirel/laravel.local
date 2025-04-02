@@ -47,7 +47,11 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
         });
+
+        Route::pattern('id', '[0-9]+');
+        Route::pattern('slug', '[a-zA-Z0-9\-_]+');
     }
+
 
     /**
      * Configure the rate limiters for the application.

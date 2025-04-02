@@ -38,9 +38,9 @@ Route::get('/dir/test', function () {
 //     return "Город: $city";
 // });
 
-Route::get('/user/{id}', function ($id) {
-    return 'юзер ' . $id;
-})->where('id', '[0-9]+');
+// Route::get('/user/{id}', function ($id) {
+//     return 'юзер ' . $id;
+// })->where('id', '[0-9]+');
 
 
 // Route::get('/user/{id}/{name}', function ($id, $name) {
@@ -51,19 +51,27 @@ Route::get('/user/{id}', function ($id) {
 //     return "Юзер: $order";
 // })->where('order', 'name|surname|age');
 
-Route::get('/posts/{date}', function ($date) {
-    return "Пост: $date";
-})->where('date', '^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$');
+// Route::get('/posts/{date}', function ($date) {
+//     return "Пост: $date";
+// })->where('date', '^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$');
 
-Route::get('/{year}/{month}/{day}', function ($year, $month, $day) {
-    return "$year-$month-$day";
-})->where('year', '\d{4}')->where('month', '(0[1-9]|1[0-2])')->where('day', '(0[1-9]|[12][0-9]|3[01])');
+// Route::get('/{year}/{month}/{day}', function ($year, $month, $day) {
+//     return "$year-$month-$day";
+// })->where('year', '\d{4}')->where('month', '(0[1-9]|1[0-2])')->where('day', '(0[1-9]|[12][0-9]|3[01])');
 
 
-Route::get('user/{id}', function($id){
-    return "User: $id";
-})->whereNumber('id');
+// Route::get('user/{id}', function($id){
+//     return "User: $id";
+// })->whereNumber('id');
 
-Route::get('city/{name}', function($name){
-    return "Город: $name";
-})->whereAlpha('name');
+// Route::get('city/{name}', function($name){
+//     return "Город: $name";
+// })->whereAlpha('name');
+
+Route::get('/post/{id}', function ($id) {
+    return '!!!'; // только если число
+});
+
+Route::get('/posts/{slug}', function ($slug) {
+    return '!!!'; // буквы и цифры, а также дефис и подчеркивание
+});
