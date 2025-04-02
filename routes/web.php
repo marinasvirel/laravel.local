@@ -34,9 +34,9 @@ Route::get('/dir/test', function () {
 //     return "Имя: $name Фамилия: $surname";
 // });
 
-Route::get('/city/{city?}', function ($city = 'minsk') {
-    return "Город: $city";
-});
+// Route::get('/city/{city?}', function ($city = 'minsk') {
+//     return "Город: $city";
+// });
 
 Route::get('/user/{id}', function ($id) {
     return 'юзер ' . $id;
@@ -47,9 +47,9 @@ Route::get('/user/{id}', function ($id) {
 //     return 'юзер ' . $id . ' ' . $name;
 // })->where('id', '[0-9]+')->where('name', '[a-z]{3,}');
 
-Route::get('/user/{order}', function ($order) {
-    return "Юзер: $order";
-})->where('order', 'name|surname|age');
+// Route::get('/user/{order}', function ($order) {
+//     return "Юзер: $order";
+// })->where('order', 'name|surname|age');
 
 Route::get('/posts/{date}', function ($date) {
     return "Пост: $date";
@@ -58,3 +58,12 @@ Route::get('/posts/{date}', function ($date) {
 Route::get('/{year}/{month}/{day}', function ($year, $month, $day) {
     return "$year-$month-$day";
 })->where('year', '\d{4}')->where('month', '(0[1-9]|1[0-2])')->where('day', '(0[1-9]|[12][0-9]|3[01])');
+
+
+Route::get('user/{id}', function($id){
+    return "User: $id";
+})->whereNumber('id');
+
+Route::get('city/{name}', function($name){
+    return "Город: $name";
+})->whereAlpha('name');
