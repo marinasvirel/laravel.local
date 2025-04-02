@@ -25,3 +25,7 @@ Route::get('/test', function () {
 Route::get('/dir/test', function () {
     return 'Сообщение: dir/test';
 });
+
+Route::get('/user/{name}', function ($name) {
+    return "string $name";
+});
