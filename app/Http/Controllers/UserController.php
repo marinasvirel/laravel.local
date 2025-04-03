@@ -6,6 +6,11 @@ class UserController extends Controller
 {
   public function show()
   {
-    return 'hello world';
+    return 'hello show';
+  }
+
+  public function all()
+  {
+    return 'hello all';
   }
 }
