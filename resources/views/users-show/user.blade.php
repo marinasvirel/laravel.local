@@ -15,7 +15,7 @@
     <p>{{ $arr['age'] }}</p>
     <p>{{ $arr['salary'] }}</p>
     <div>{{ count($arr) }}</div>
-    <p>{{ $city ?? 'Москва' }}</p>
+    <p>{{-- $city ?? 'Москва' --}}</p>
     <p>{ {$location['country'] ?? 'Россия' }}</p>
     <p>{{ $location['city'] ?? 'Москва' }}</p>
     <p>{{ $year ?? date('Y') }}</p>
