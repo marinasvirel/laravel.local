@@ -6,12 +6,12 @@ class UserController extends Controller
 {
   public function show()
   {
-    return view('users-show.show');
+    return view('users-show.show', ['text' => 'show content']);
   }
 
   public function all()
   {
-    return view('users-show.users');
+    return view('users-show.users', ['text' => 'все юзеры']);
   }
 
   public function showName($name)

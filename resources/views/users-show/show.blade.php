@@ -3,5 +3,5 @@
 		show title
 		</x-slot>
 
-		show content
+		{{ $text }}
 </x-layout>
