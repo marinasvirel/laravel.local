@@ -10,4 +10,5 @@
     <input type="text" value="{{$value1}}">
     <input type="text" value="{{$value2}}">
     <input type="text" value="{{$value3}}">
+    <p>current timestamp: {{ date('d.m.Y') }}</p>
 </x-layout>
