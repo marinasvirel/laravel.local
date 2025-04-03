@@ -11,7 +11,7 @@ class UserController extends Controller
 
   public function all()
   {
-    return view('users');
+    return view('users-show.users');
   }
 
   public function showName($name)
@@ -21,9 +21,7 @@ class UserController extends Controller
 
   public function showNameSurname($name, $surname)
   {
-    // return "$name $surname";
-    // return view('user', ['var1' => '1', 'var2' => '2']);
-    return view('user', ['name' => $name, 'surname' => $surname]);
+    return view('users-show.user', ['name' => $name, 'surname' => $surname]);
   }
 
   public function cities($user)
