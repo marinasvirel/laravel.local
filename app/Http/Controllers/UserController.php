@@ -27,10 +27,15 @@ class UserController extends Controller
 
   public function showNameSurname($name, $surname)
   {
-    return view('users-show.user', [
-      'title' => 'Имя и фамилия',
-      'name' => $name, 
-      'surname' => $surname],
+    return view(
+      'users-show.user',
+      [
+        'title' => 'Имя и фамилия',
+        'name' => $name,
+        'surname' => $surname,
+        'age' => 'age',
+        'salary' => 'salary',
+      ],
     );
   }
 
