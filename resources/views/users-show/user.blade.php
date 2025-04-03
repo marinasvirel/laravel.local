@@ -1,6 +1,6 @@
 <x-layout>
   <x-slot:title>
-    Юзер
+    {{ $title }}
     </x-slot>
     Имя: {{ $name }}
     Фамилия: {{ $surname }}

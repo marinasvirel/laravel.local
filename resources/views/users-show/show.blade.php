@@ -1,6 +1,6 @@
 <x-layout>
 	<x-slot:title>
-		show title
+		{{ $title }}
 		</x-slot>
 
 		{{ $text }}

@@ -1,6 +1,6 @@
 <x-layout>
   <x-slot:title>
-    Все юзеры
+    {{ $title }}
     </x-slot>
     {{ $text }}
 </x-layout>

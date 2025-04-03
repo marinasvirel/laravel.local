@@ -6,12 +6,18 @@ class UserController extends Controller
 {
   public function show()
   {
-    return view('users-show.show', ['text' => 'show content']);
+    return view('users-show.show', [
+      'title' => 'show content',
+      'text' => 'show content',
+    ]);
   }
 
   public function all()
   {
-    return view('users-show.users', ['text' => 'все юзеры']);
+    return view('users-show.users', [
+      'title' => 'все юзеры',
+      'text' => 'все юзеры',
+    ]);
   }
 
   public function showName($name)
@@ -21,7 +27,11 @@ class UserController extends Controller
 
   public function showNameSurname($name, $surname)
   {
-    return view('users-show.user', ['name' => $name, 'surname' => $surname]);
+    return view('users-show.user', [
+      'title' => 'Имя и фамилия',
+      'name' => $name, 
+      'surname' => $surname],
+    );
   }
 
   public function cities($user)
