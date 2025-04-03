@@ -42,10 +42,18 @@ class UserController extends Controller
         'value1' => 'value1',
         'value2' => 'value2',
         'value3' => 'value3',
+        'city' => 'Лима',
+        'year' => 2025,
+        'month' => 04,
+        'day' => 04,
         'arr' => [
           'name' => $name,
           'age' => 'age',
           'salary' => 'salary',
+        ],
+        'location' => [
+          'country' => 'Украина',
+          'city' => 'Киев',
         ],
       ],
     );
