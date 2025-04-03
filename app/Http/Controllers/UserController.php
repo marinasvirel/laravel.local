@@ -21,7 +21,9 @@ class UserController extends Controller
 
   public function showNameSurname($name, $surname)
   {
-    return "$name $surname";
+    // return "$name $surname";
+    // return view('user', ['var1' => '1', 'var2' => '2']);
+    return view('user', ['name' => $name, 'surname' => $surname]);
   }
 
   public function cities($user)
