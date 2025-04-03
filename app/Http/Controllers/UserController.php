@@ -13,4 +13,14 @@ class UserController extends Controller
   {
     return 'hello all';
   }
+
+  public function showName($name)
+  {
+    return $name;
+  }
+
+  public function showNameSurname($name, $surname)
+  {
+    return "$name $surname";
+  }
 }

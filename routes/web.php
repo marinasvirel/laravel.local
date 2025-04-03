@@ -20,3 +20,6 @@ Route::get('/', function () {
 
 Route::get('/user', [UserController::class, 'show']);
 Route::get('/user/all', [UserController::class, 'all']);
+
+Route::get('/user/{name}', [UserController::class, 'showName']);
+Route::get('/user/{name}/{surname}', [UserController::class, 'showNameSurname']);
