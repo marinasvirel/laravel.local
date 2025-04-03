@@ -21,4 +21,5 @@
     <p>{{ $year ?? date('Y') }}</p>
     <p>{{ $month ?? date('m') }}</p>
     <p>{{ $day ?? date('d') }}</p>
+    <p>{!! $str !!}</p>
 </x-layout>

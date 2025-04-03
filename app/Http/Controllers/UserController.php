@@ -46,6 +46,7 @@ class UserController extends Controller
         'year' => 2025,
         'month' => 04,
         'day' => 04,
+        'str' => '<b>text</b>',
         'arr' => [
           'name' => $name,
           'age' => 'age',
