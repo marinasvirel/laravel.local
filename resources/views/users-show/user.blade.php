@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>Юзер</title>
-</head>
-
-<body>
-Имя: {{ $name }}
-Фамилия: {{ $surname }}
-</body>
-
-</html>
+<x-layout>
+  <x-slot:title>
+    Юзер
+    </x-slot>
+    Имя: {{ $name }}
+    Фамилия: {{ $surname }}
+</x-layout>

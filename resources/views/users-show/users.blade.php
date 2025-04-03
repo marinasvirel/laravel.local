@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>Все юзеры</title>
-</head>
-
-<body>
-  Все юзеры
-</body>
-
-</html>
+<x-layout>
+  <x-slot:title>
+    Все юзеры
+    </x-slot>
+    Все юзеры
+</x-layout>
