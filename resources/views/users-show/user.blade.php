@@ -23,5 +23,7 @@
     <p>{{ $month ?? date('m') }}</p>
     <p>{{ $day ?? date('d') }}</p>
     <p>{!! $str !!}</p>
+    @else
+    вам меньше 18
     @endif
 </x-layout>
