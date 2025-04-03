@@ -2,9 +2,9 @@
   <x-slot:title>
     {{ $title }}
     </x-slot>
-    @unless ($age < 18)
-    несовершеннолетний
-    @endunless
+    @if (count($num) > 0)
+    {{ array_sum($num) }}
+    @else
+    в массиве нет записей
+    @endif
 </x-layout>
-
-{{-- не работает --}}
