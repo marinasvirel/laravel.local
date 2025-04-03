@@ -6,7 +6,7 @@ class UserController extends Controller
 {
   public function show()
   {
-    return 'hello show';
+    return view('users-show.show');
   }
 
   public function all()
