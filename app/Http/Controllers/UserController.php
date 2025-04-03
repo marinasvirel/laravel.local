@@ -33,7 +33,7 @@ class UserController extends Controller
         'title' => 'Имя и фамилия',
         'surname' => $surname,
         'name' => $name,
-        'age' => 17,
+        'age' => 18,
         'salary' => 'salary',
         'class' => 'main-text',
         'color' => 'red',

@@ -2,7 +2,7 @@
   <x-slot:title>
     {{ $title }}
     </x-slot>
-    @if ($age >= 18)
+    @if ($age > 18)
     <p class="{{ $class }}">Фамилия: {{ $surname }}</p>
     <p class="{{ $class }}">Имя: {{ $name }}</p>
     <p class="{{ $class }}">Возраст: {{ $age }}</p>
@@ -23,6 +23,8 @@
     <p>{{ $month ?? date('m') }}</p>
     <p>{{ $day ?? date('d') }}</p>
     <p>{!! $str !!}</p>
+    @elseif ($age === 18)
+    вам 18
     @else
     вам меньше 18
     @endif
