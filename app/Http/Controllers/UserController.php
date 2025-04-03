@@ -57,6 +57,7 @@ class UserController extends Controller
           'city' => 'Киев',
         ],
         'num' => [1, 2, 3],
+        'strs' => ['str1', 'str2', 'str3'],
       ],
     );
   }
