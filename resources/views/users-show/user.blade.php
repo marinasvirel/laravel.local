@@ -2,14 +2,20 @@
   <x-slot:title>
     {{ $title }}
     </x-slot>
+    <ul>
+      @foreach ($employees as $employe)
+      <li>{{ $employe['name'] }} {{ $employe['surname'] }} {{ $employe['salary'] }}</li>
+      @endforeach
+    </ul>
+
     <table>
-      <tr>
-        @foreach ($arrNum as $subArr)
-        @foreach ($subArr as $elem)
-        <td>{{ $elem }}</td>
-        @endforeach
-        @endforeach
-      </tr>
+    @foreach ($employees as $employe)
+    <tr>
+      <td>{{ $employe['name'] }}</td>
+      <td>{{ $employe['surname'] }}</td>
+      <td>{{ $employe['salary'] }}</td>
+    </tr>
+    @endforeach
     </table>
 
 </x-layout>
