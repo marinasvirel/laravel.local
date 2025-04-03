@@ -35,6 +35,13 @@ class UserController extends Controller
         'surname' => $surname,
         'age' => 'age',
         'salary' => 'salary',
+        'class' => 'main-text',
+        'color' => 'red',
+        'text' => 'ссылка',
+        'href' => 'https://laravel.local/user',
+        'value1' => 'value1',
+        'value2' => 'value2',
+        'value3' => 'value3',
       ],
     );
   }
