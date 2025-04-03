@@ -77,6 +77,7 @@ class UserController extends Controller
             'salary' => 3000,
           ],
         ],
+        'names' => ['name1', 'name2', 'name3'],
       ],
     );
   }

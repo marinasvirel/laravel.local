@@ -2,20 +2,10 @@
   <x-slot:title>
     {{ $title }}
     </x-slot>
-    <ul>
-      @foreach ($employees as $employe)
-      <li>{{ $employe['name'] }} {{ $employe['surname'] }} {{ $employe['salary'] }}</li>
-      @endforeach
-    </ul>
-
-    <table>
-    @foreach ($employees as $employe)
-    <tr>
-      <td>{{ $employe['name'] }}</td>
-      <td>{{ $employe['surname'] }}</td>
-      <td>{{ $employe['salary'] }}</td>
-    </tr>
-    @endforeach
-    </table>
+    @forelse ($names as $elem)
+    <p>{{ $elem }}</p>
+    @empty
+    <p>в массиве нет элементов</p>
+    @endforelse
 
 </x-layout>
