@@ -31,8 +31,8 @@ class UserController extends Controller
       'users-show.user',
       [
         'title' => 'Имя и фамилия',
-        'name' => $name,
         'surname' => $surname,
+        'name' => $name,
         'age' => 'age',
         'salary' => 'salary',
         'class' => 'main-text',
@@ -42,6 +42,11 @@ class UserController extends Controller
         'value1' => 'value1',
         'value2' => 'value2',
         'value3' => 'value3',
+        'arr' => [
+          'name' => $name,
+          'age' => 'age',
+          'salary' => 'salary',
+        ],
       ],
     );
   }
