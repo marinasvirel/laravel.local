@@ -11,7 +11,7 @@ class UserController extends Controller
 
   public function all()
   {
-    return 'hello all';
+    return view('users');
   }
 
   public function showName($name)
