@@ -56,7 +56,7 @@ class UserController extends Controller
           'country' => 'Украина',
           'city' => 'Киев',
         ],
-        'num' => [1, 2, 3],
+        'num' => [1, 2, 3, 4, 5, 6],
         'strs' => ['str1', 'str2', 'str3'],
         'data' => [1, 2],
         'arrNum' => [[1, 2, 3], [4, 5, 6], [7, 8, 9]],
